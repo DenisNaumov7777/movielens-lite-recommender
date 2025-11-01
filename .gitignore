@@ -1,0 +1,62 @@
+# === PYTHON ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# === ENVIRONMENTS ===
+venv/
+.env/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# === JUPYTER NOTEBOOKS ===
+.ipynb_checkpoints/
+*.ipynb_convert*
+*.ipynb_backup*
+
+# === LOGS & OUTPUTS ===
+*.log
+*.out
+*.tmp
+*.swp
+*.bak
+*.npy
+*.npz
+
+# === BUILD / CACHE ===
+.cache/
+.pytest_cache/
+build/
+dist/
+.eggs/
+*.egg-info
+
+# === DATA FILES ===
+data/
+!data/README.md   # если ты хочешь оставить метку для каталога
+
+# === SYSTEM & IDE ===
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# === MATPLOTLIB CACHE ===
+~/.cache/matplotlib
+
+# === GENERATED FIGURES ===
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.gif
+
+# === TEMPORARY / CHECKPOINT ===
+checkpoint/
+tmp/
+outputs/
