@@ -26,10 +26,9 @@ Instead, the algorithm **learns** hidden features automatically — for example:
 Each user and movie are represented as vectors in the same latent feature space.  
 The predicted rating is the dot product between these vectors:
 
-\[
+$$
 \hat{y}^{(i,j)} = w^{(j)} \cdot x^{(i)} + b^{(j)}
-\]
-
+$$
 ---
 
 ## 🧩 Cost Function
