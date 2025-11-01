@@ -36,11 +36,7 @@ The predicted rating is the dot product between these vectors:
 We minimize the mean squared error for all user–movie pairs with known ratings:
 
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.image?
-  J(X,W,b)=\frac{1}{2}\sum_{(i,j):r(i,j)=1}
-  \left(w^{(j)}\cdot%20x^{(i)}+b^{(j)}-y^{(i,j)}\right)^2+
-  \frac{\lambda}{2}\left(\sum_i\|x^{(i)}\|^2+\sum_j\|w^{(j)}\|^2\right)" 
-  alt="cost-function"/>
+  <img src="https://latex.codecogs.com/svg.image?J(X,W,b)=\frac{1}{2}\sum_{(i,j):r(i,j)=1}\left(w^{(j)}\cdot%20x^{(i)}+b^{(j)}-y^{(i,j)}\right)^2+\frac{\lambda}{2}\left(\sum_i\|x^{(i)}\|^2+\sum_j\|w^{(j)}\|^2\right)" alt="cost-function"/>
 </p>
 
 where  
