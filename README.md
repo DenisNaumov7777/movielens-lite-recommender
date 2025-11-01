@@ -35,17 +35,19 @@ $$
 
 We minimize the mean squared error for all user–movie pairs with known ratings:
 
-\[
+$$
 J(X, W, b) =
 \frac{1}{2}
 \sum_{(i,j):r(i,j)=1}
-(w^{(j)} \cdot x^{(i)} + b^{(j)} - y^{(i,j)})^2
+\left(
+w^{(j)} \cdot x^{(i)} + b^{(j)} - y^{(i,j)}
+\right)^2
 + \frac{\lambda}{2}
 \left(
-\sum_i ||x^{(i)}||^2 +
-\sum_j ||w^{(j)}||^2
+\sum_i \|x^{(i)}\|^2 +
+\sum_j \|w^{(j)}\|^2
 \right)
-\]
+$$
 
 where  
 - \( X \): learned movie features  
