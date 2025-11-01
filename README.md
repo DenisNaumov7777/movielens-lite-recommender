@@ -26,28 +26,22 @@ Instead, the algorithm **learns** hidden features automatically — for example:
 Each user and movie are represented as vectors in the same latent feature space.  
 The predicted rating is the dot product between these vectors:
 
-$$
-\hat{y}^{(i,j)} = w^{(j)} \cdot x^{(i)} + b^{(j)}
-$$
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?\hat{y}^{(i,j)}=w^{(j)}\cdot%20x^{(i)}+b^{(j)}" alt="formula"/>
+</p>
 ---
 
 ## 🧩 Cost Function
 
 We minimize the mean squared error for all user–movie pairs with known ratings:
 
-$$
-J(X, W, b) =
-\frac{1}{2}
-\sum_{(i,j):r(i,j)=1}
-\left(
-w^{(j)} \cdot x^{(i)} + b^{(j)} - y^{(i,j)}
-\right)^2
-+ \frac{\lambda}{2}
-\left(
-\sum_i \|x^{(i)}\|^2 +
-\sum_j \|w^{(j)}\|^2
-\right)
-$$
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.image?
+  J(X,W,b)=\frac{1}{2}\sum_{(i,j):r(i,j)=1}
+  \left(w^{(j)}\cdot%20x^{(i)}+b^{(j)}-y^{(i,j)}\right)^2+
+  \frac{\lambda}{2}\left(\sum_i\|x^{(i)}\|^2+\sum_j\|w^{(j)}\|^2\right)" 
+  alt="cost-function"/>
+</p>
 
 where  
 - \( X \): learned movie features  
